@@ -5,7 +5,9 @@
 #include "../miryoku/mapping/42/corne.h"
 #include "../miryoku/miryoku.dtsi"
 
-/* Override the default 10‑LED strip with the 6 you actually soldered */
 &led_strip {
     chain-length = <6>;
+};
+&{/chosen} {
+    zmk,underglow = &led_strip;
 };
