@@ -6,8 +6,5 @@
 #include "../miryoku/miryoku.dtsi"
 
 &led_strip {
-    chain-length = <6>;
-};
-&{/chosen} {
-    zmk,underglow = &led_strip;
+    chain-length = <27>;
 };
